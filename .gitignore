@@ -1,4 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#git clone https://github.com/username/react-webbapp
+#npm install
 
 # dependencies
 /node_modules
