@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
+
+html,body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a{
+    color: #080808;
+    text-decoration: none;
+    transition: 0.2s e;
+}
+
+
+a:hover{
+color: #FF7373;
+text-decoration: none;
+
+
+}
+
+.top-grey{
+    height: 946px;
+    background-color: #E6E6E6;
+}
+
+.nav{
+    display: flex;
+    
+}
+
+.left{
+    margin-top: 20px;
+    margin-left: 100px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+   margin-left: 600px;
+   margin-top: 40px;
+   font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+.nav-icon-links {
+    position: relative;
+    margin-top: 40px;
+  margin-left: 450px;
+}
+
+.button{
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s ease-in-out;
+
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+.button-1{
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s ease-in-out;
+
+}
+
+.button-1:hover{
+    background-color: black;
+    color: white;
+}
+
+.button-2{
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.button-2:hover{
+    background-color: black;
+    color: white;
+}
+
+.button-3{
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+
+.button-3:hover{
+    background-color: black;
+    color: white;
+}
+
+.top-grey-middle{
+    display: flex;
+   
+}
+
+.left-1{
+
+margin-top: 13px;
+}
+
+.middle-1{
+  margin-left: 9.5rem;
+  margin-top: 15rem;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.sale{
+    font-size: 65px;
+    margin-left:45px;
+}
+.procent{
+    font-size: 65px;
+}
+
+.info{
+    margin-top: 15px;
+}
+
+.shop{
+   width: 188px; 
+   height: 60px;
+   margin-left: 75px;
+   margin-top: 25px;
+   background-color: #FF7373;
+   color: white;
+   border: none;
+   transition: 0.2s ease-in-out;
+}
+  
+.shop:hover{
+    background-color: white;
+    color: #FF7373;
+}
+
+.right-1{
+   position: absolute;
+   left: 80rem;
+   margin-top: 1rem;
+}
+
+.featured{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.card{
+    position: relative;
+    height: 323px;
+    margin-top: 10px;
+    border: none;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    transition: 0.2s ease-in-out;
+   
+}
+
+.card:hover{
+    background-color:#bbb8b8fb ;
+}
+
+.card-menu{
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 10%;
+ list-style: none;
+ margin: auto;
+ padding: 0.5rem;
+ font-size: 20px;
+ border-radius: 25px;
+ background-color: #bbb8b8;
+ transition: top 0.3s ease-in-out;
+
+}
+
+.card:hover .card-menu{
+    top: 20px;
+}
+
+.card-menu li a{
+    color:#080808 ;
+    border-radius: 50px;
+    background-color: white;
+    padding: 2px;
+  margin-top: 10px;
+}
+
+.card-menu li a:hover{
+  color: #fafafa;
+  background-color: #080808;
+}
+
+
+
+.card-body{
+    position: absolute;
+    margin-left: 85px;
+    bottom: 0;
+    color: white;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .card-body{
+    bottom: 35%;
+}
+
+.card-body h1{
+    margin-left: 10px;
+    font-size:  1rem;
+}
+
+.card-background{
+    position: absolute;
+    bottom: 0;
+    background-color: #FF7373;
+    height: 15%;
+    width: 100%;
+    opacity: 0.90;
+    transition: height 0.3s ease-in-out;
+}
+
+.card:hover .card-background{
+    height: 50%;
+}
+
+
+.info-box{
+    position: absolute;
+    width: 306px;
+    height: 110px;
+   bottom: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+
+.category{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #bbb8b8fb;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -15px;
+}
+
+.first{
+    margin-left: 105px;
+    
+}
+
+.fa-star-sharp{
+  
+    color: #FF7373;
+}
+
+
+.euro{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-bag-shopping{
+   font-size: 0,9em;
+   margin-left: 3px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 100px;
+}
+
+
+.box-1{
+    margin-left:120px;
+}
+
+
+.title-1{
+    position: absolute;
+    margin-top: -320px;
+    margin-left: 500px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.shop-1{
+    position: absolute;
+    width: 188px; 
+    height: 60px;
+    margin-left: 485px;
+    margin-top: -180px;
+    background-color: #0c0c0c;
+    color: white;
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+ }
+
+
+ .shop-1:hover{
+    background-color: white;
+    color: black;
+ }
+
+.box-2{
+   margin-right: 115px;
+}
+
+.title-2{
+    position: absolute;
+    margin-top: -320px;
+    margin-left: 55px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.shop-2{
+    position: absolute;
+    width: 188px; 
+    height: 60px;
+    margin-left: 45px;
+    margin-top: -180px;
+    background-color: #fffdfd;
+    color: rgb(12, 12, 12);
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    
+ }
+
+ .shop-2:hover{
+    background-color: black;
+    color: white;
+ }
+
+
+ .bigbox-1{
+    position: absolute;
+    width: 825px;
+    height: 657px;
+  margin-top: -660px;
+  margin-left: 120px;
+    background-color:#BBBBBB ;
+    z-index:3;
+ }
+
+.dollar{
+    display: flex;
+    justify-content: center;
+    margin-top: 280px;
+color: white;
+}
+
+ .shop-3{
+   margin-left: 320px;
+   margin-top: 20px;
+    width: 188px; 
+    height: 60px;
+    background-color: #fffdfd;
+    color: rgb(12, 12, 12);
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ .shop-3:hover{
+    background-color: black;
+    color: white;
+ }
+
+
+ .bigbox-2{
+    position: absolute;
+    width: 825px;
+    height: 657px;
+  margin-top: -660px;
+  margin-left: 960px;
+    background-color:#BBBBBB ;
+    z-index:3;
+ }
+
+
+ .dollar-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 280px;
+color: white;
+}
+
+
+ .shop-4{
+    margin-left: 320px;
+    margin-top: 20px;
+     width: 188px; 
+     height: 60px;
+     background-color: #fffdfd;
+     color: rgb(12, 12, 12);
+     border: none;
+     transition: 0.2s ease-in-out;
+     font-family: 'Poppins', sans-serif;
+  }
+ 
+  .shop-4:hover{
+     background-color: black;
+     color: white;
+  }
+ 
+
+
+  .bottom-info{
+    display:flex ;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+.support{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 120px;
+    border:none;
+    box-shadow: 2px 2px 5px 2px#bbb8b8;
+    transition: 0.2s ease-in-out;
+}
+
+.support:hover{
+    background-color: black;
+    color: white;
+}
+   
+
+.payment{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 120px;
+    border:none;
+    box-shadow: 2px 2px 5px 2px#bbb8b8;
+    transition: 0.2s ease-in-out;
+}
+
+.payment:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.delivery{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 120px;
+    border:none;
+    box-shadow: 2px 2px 5px 2px#bbb8b8;
+    transition: 0.2s ease-in-out;
+}
+
+
+.delivery:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.reuters{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 120px;
+    border:none;
+    box-shadow: 2px 2px 5px 2px#bbb8b8;
+    transition: 0.2s ease-in-out;
+}
+
+.reuters:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.second-info{
+    margin-left: 40px;
+}
+
+.third-info{
+    margin-left: 40px;
+}
+
+.fourth-info{
+    margin-left: 40px;
+}
+
+.rubrik{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.rubrik-1{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+  .bottom-border{
+    height: 110px;
+    background-color:#F8F8F8 ;
+    margin-top: 120px;
+}
+
+
+.media{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.fa-facebook-f{
+    margin-top: 30px;
+}
+
+.fa-instagram{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.fa-twitter{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.fa-google{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.fa-linkedin{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.text-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #616365;
+}
+
+
+.contacts{
+    
+    margin-top: 100px;
+    margin-left: 400px;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-form{
+    margin-top: 60px;
+    margin-left: 395px;
+    
+}
+
+.contact-form form{
+   display: grid; 
+   grid-template-columns: 400px 400px;
+   gap: 40px;
+   
+}
+
+
+.contact-form .textarea{
+    
+    grid-column: 1 / -1;
+}
+
+.contact-form form textarea{
+    
+
+    padding: 18px 20px;
+    border: 1px solid #70707060;
+    height: 140px;
+    resize: none;
+    width: 100%;
+}
+
+.contact-form .container{
+   
+  
+}
+
+.contact-form form input{
+    padding: 18px 20px;
+    border: 1px solid #70707060;
+    width: 100%;
+}
+
+.contact-form h2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+
+
+.shop-5{
+   
+     width: 188px; 
+     height: 60px;
+     background-color: #FF7373;
+     color: white;
+     border: none;
+     transition: 0.2s ease-in-out;
+     font-family: 'Poppins', sans-serif;
+     margin-top: 20px;
+  }
+ 
+  .shop-5:hover{
+     background-color: black;
+     color: white;
+  }
+ 
+
+.bottom-border-2{
+    position: absolute;
+    width: 1980px;
+    height: 110px;
+    background-color:#F8F8F8 ;
+    margin-top: 1180px;
+
+}
+.media-2{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+.map{
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+}
+
+.map .google-map{
+    border:0;
+    width: 100%; 
+    height: 380px;
+}
+.contact-form form .errormessage{
+    color: #FF7373;
+    font-size: 0.8em;
+    
+}
+
+.contact-form form .error{
+    color: #FF7373;
+    border: 1px solid #FF7373;
+}

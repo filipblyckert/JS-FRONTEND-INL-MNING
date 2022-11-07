@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
+
+html,body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a{
+    color: #080808;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+
+a:hover{
+color: #FF7373;
+text-decoration: none;
+
+
+}
+
+
+
+.mainmenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo menulinks menuicons";
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    
+  
+}
+
+
+
+.mainmenu .Logo{
+   font-size: 35px; 
+   font-weight: 700;
+
+}
+
+
+.mainmenu .Logo:hover{
+    color: #080808;
+ }
+ 
+
+
+.mainmenu .menu-links{
+    font-weight: 500;
+   
+}
+
+.mainmenu .menu-link{
+    color: black;
+    font-weight: 500;
+   text-decoration: none;
+   margin-left: 15px;
+   margin-right: 15px;
+    transition: 0.2s ease-in-out;
+}
+.mainmenu .menu-link:hover{
+color: #FF7373;
+
+}
+
+.mainmenu .menu-link .active{
+color: #FF7373;
+text-decoration: none;
+
+}
+
+.mainmenu .menu-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.mainmenu .menu-icons i{
+    
+}
+
+
+.mainmenu .menu-icon{
+
+  background-color: white;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 6px 4px #888888;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+
+
+}
+
+
+.mainmenu .menu-icon:hover{
+    background-color: black;
+    color: white;
+}
+  
+
+.menu-icon .active{
+    color: #FF7373;
+    text-decoration: none;
+    
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eceaea;
+    padding: 25px;
+}
+
+
+footer .socialmedia{
+    margin-bottom: 25px;
+}
+
+
+footer .socialmedia a{
+    font-size: 20px;
+    color: #080808;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+footer .socialmedia a:hover{
+   color: #FF7373;
+   text-decoration: none; 
+}
+
+
+.product-grid h2{
+display: flex;
+justify-content: center;
+}
+
+
+.card{
+    position: relative;
+    height: 323px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    transition: 0.2s ease-in-out;
+    
+   
+}
+
+.card:hover{
+
+    background-color:#bbb8b8fb ;
+}
+
+.card-menu{
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 10%;
+ list-style: none;
+ margin: auto;
+ padding: 0.5rem;
+ font-size: 20px;
+ border-radius: 25px;
+ background-color: #bbb8b8;
+ transition: top 0.3s ease-in-out;
+}
+
+.card-menu li a{
+    color:#080808 ;
+    border-radius: 50px;
+    background-color: white;
+    padding: 2px;
+  margin-top: 10px;
+}
+
+.card-menu li a:hover{
+    color: #fafafa;
+  background-color: #080808;
+}
+
+.card:hover .card-menu{
+    top: 20px;
+}
+
+
+.card-body{
+    position: absolute;
+    margin-left: 85px;
+    bottom: 0;
+    color: white;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .card-body{
+    bottom: 35%;
+}
+
+
+.card-body h1{
+    margin-left: 10px;
+    font-size:  1rem;
+}
+
+.card-category{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #bbb8b8fb;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.card-background{
+    position: absolute;
+    bottom: 0;
+    background-color: #FF7373;
+    height: 15%;
+    width: 100%;
+    opacity: 0.90;
+    transition: height 0.3s ease-in-out;
+}
+
+
+.card:hover .card-background{
+    height: 50%;
+}
+
+.first{
+    margin-left: 105px;
+    
+}
+
+.fa-star-sharp{
+  
+    color: #FF7373;
+}
+
+.euro{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-2{
+    height: 36px;
+    width: 36px;
+    font-size: 0,9em;
+    margin-left: 3px;
+    border: none;
+    border-radius: 50%;
+ }
+
+ .fa-2:hover{
+   background-color: #080808;
+   color: white;
+ }
+
+
+ .fa-arrows-retweet{
+    height: 36px;
+    width: 36px;
+    margin-left: 3px;
+    border: none;
+    border-radius: 50%;
+ }
+
+ .fa-arrows-retweet:hover{
+   background-color: #080808;
+   color: white;
+ }
+
+
+ .fa-1{
+   height: 36px;
+   width: 36px;
+    margin-left: 3px;
+    border: none;
+    border-radius: 50%;
+ }
+
+ .fa-1:hover{
+   background-color: #080808;
+   color: white;
+ }
+
+
+
+ .info-box{
+    position: absolute;
+    width: 306px;
+    height: 110px;
+   bottom: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.quick-view{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #FF7373;
+    border:none;
+
+}
+
+.featured-products{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.breadcrumb{
+
+margin-top: 20px;
+
+}
+
+.breadcrumb .container{
+max-width: 1110px;
+}
+
+.breadcrumb-list{
+list-style: none;
+margin: 0 0 40px 0;
+padding: 0;
+color: #FF7373;
+}
+
+
+.breadcrumb-list li{
+    display: inline-block;
+    font-weight: 500;
+}
+
+
+.breadcrumb-list li a{
+    color: #080808;
+}
+
+.breadcrumb-list li a:hover{
+    color: #FF7373;
+}
+
+.breadcrumb-list li + li:before{
+    content: ">\00a0";
+    font-weight: 400;
+    color: #080808;
+}
+
+
+.google-map{
+margin-bottom: 70px;
+border: 0;
+width: 100%;
+height: 380px;
+}
+
+
+.contact-form{
+    margin-bottom: 60px;
+
+}
+
+.contact-form .container{
+   
+max-width: 1110px;
+    
+}
+
+
+.contact-form h2{
+   
+    font-size: 18px;
+    font-weight: 700;   
+    margin-bottom: 30px;
+}
+
+
+.contact-form form{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px;
+
+}
+
+
+.contact-form form input{
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid #bbb8b8 ;
+ }
+
+ .contact-form form .textarea{
+    grid-column: 1 / -1;
+ }
+
+ .contact-form form .textarea textarea{
+    width: 100%;
+    height: 140px;
+    padding: 18px 20px;
+    border: 1px solid #bbb8b8;
+    resize: none;
+ }
+
+ .contact-form form .comment-button{
+   position: relative;
+   width: 100%;
+   text-align: center;
+   background-color: #FF7373;
+   color: white;
+   padding: 20px 50px;
+   transition: 0.2s ease-in-out;
+   border: none;
+ }
+
+ .contact-form form .comment-button:hover{
+
+    background-color: #080808;
+    
+ }
+
+
+ .contact-form form .error{
+
+    color: #FF7373;
+    border: 1px solid #FF7373;
+ }
+ 
+
+ .contact-form form .errorMessage{
+    margin-top: 5px;
+    color: #FF7373;
+    font-size: 0.8em
+
+ }
+
+
+
+.showcase{
+    background: rgb(230, 230, 230);
+    background: linear-gradient(90deg, rgba(245,245,245,1) 100%);
+    padding-top: 80px;
+   
+}
+
+.showcase .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sale{
+    margin-left: 20px;
+}
+.discount{
+margin-left: -25px;
+}
+
+.free{
+    font-size: 16px;
+    color: #0000008f;
+    margin-left: -100px;
+}
+
+.shop{
+    position: absolute;
+    width: 188px; 
+    height: 60px;
+    margin-left: 800px;
+    margin-top: 250px;
+    background-color: #FF7373;
+    color: white;
+    border: none;
+    transition: 0.2s ease-in-out;
+ }
+   
+ .shop:hover{
+     background-color: white;
+     color: #FF7373;
+ }
+
+.boxes{
+    display: flex;
+    justify-content: center;
+}
+
+ .box-left{
+    display: flex;
+    width: 825px;
+    height: 403px;
+    background-color: #584238;
+    color: white;
+    margin-right: 10px;
+ }
+
+
+ .box-left h1{
+    margin-left: 85px;
+    margin-top: 20px;
+ }
+
+ .pamela{
+    width: 308px;
+    height: 403px;
+ }
+
+ .shop-1{
+    position: absolute;
+    width: 188px; 
+    height: 60px;
+    margin-top: 200px;
+    margin-left:400px ;
+    background-color: #000000;
+    color: white;
+    border: none;
+    transition: 0.2s ease-in-out;
+ }
+
+ .shop-1:hover{
+    background-color: white;
+    color: #000000;
+}
+
+
+
+.box-right{
+    display: flex;
+    width: 825px;
+    height: 403px;
+    background-color: #b9b9b979;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+ }
+
+ .box-right h1{
+    margin-left: 30px;
+    margin-top: 20px;
+ }
+
+ .black-friday{
+    width: 308px;
+    height: 403px;
+    margin-left: 150px;
+ }
+
+
+ .shop-2{
+    position: absolute;
+    width: 188px; 
+    height: 60px;
+    margin-top: 200px;
+    margin-left: 30px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    transition: 0.2s ease-in-out;
+ }
+
+ .shop-2:hover{
+    background-color: white;
+    color: #000000;
+}
+
+
+
+
+.bottom-info{
+    display:flex ;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+.support{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 120px;
+    border:none;
+    box-shadow: 2px 2px 5px 2px#bbb8b8;
+    transition: 0.2s ease-in-out;
+}
+
+.support:hover{
+    background-color: black;
+    color: white;
+}
+   
+
+.payment{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 120px;
+    border:none;
+    box-shadow: 2px 2px 5px 2px#bbb8b8;
+    transition: 0.2s ease-in-out;
+}
+
+.payment:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.delivery{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 120px;
+    border:none;
+    box-shadow: 2px 2px 5px 2px#bbb8b8;
+    transition: 0.2s ease-in-out;
+}
+
+
+.delivery:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.reuters{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 120px;
+    border:none;
+    box-shadow: 2px 2px 5px 2px#bbb8b8;
+    transition: 0.2s ease-in-out;
+}
+
+.reuters:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.second-info{
+    margin-left: 40px;
+}
+
+.third-info{
+    margin-left: 40px;
+}
+
+.fourth-info{
+    margin-left: 40px;
+}
