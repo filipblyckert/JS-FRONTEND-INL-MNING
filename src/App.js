@@ -17,17 +17,17 @@ function App() {
 
  const[ products, setProducts] = useState({
   all: [],
-  featuredProducts: [],
-  bottomProducts:[]
+  featuredProducts: []
+
  })
 
 
-  const [featuredProducts, setFeaturedProducts] = useState ([])
-  const [bottomProducts, setBottomProducts] = useState ([])
+ 
+ 
 
   useEffect(() => {
     const fetchAllProducts = async () => {
-      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
       setProducts( {...products, all: await result.json()})
     }
 
@@ -35,19 +35,12 @@ function App() {
 
 
     const fetchFeaturedProducts = async () => {
-      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
-      setFeaturedProducts( {...products, featuredProducts: await result.json()})
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?')
+      setProducts( {...products, featuredProducts: await result.json()})
     }
 
     fetchFeaturedProducts()
 
-
-    const fetchBottomProducts = async () => {
-      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=16')
-      setBottomProducts( {...products, bottomProducts: await result.json()})
-    }
-
-    fetchBottomProducts()
 
    
   }, [setProducts])

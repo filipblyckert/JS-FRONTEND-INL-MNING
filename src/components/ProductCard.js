@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 
-const ProductCard = (item) => {
+const ProductCard = ({item}) => {
 
 const addToWishList = (e) => {
     console.log("added to wish list")

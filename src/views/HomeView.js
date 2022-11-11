@@ -6,6 +6,7 @@ import ShowcaseSection from '../sections/ShowcaseSection'
 import { ProductContext } from '../contexts/contexts'
 import MiddleSection from '../sections/MiddleSection'
 import BottomLinksSection from '../sections/BottomLinksSection'
+import GreyboxSection from '../sections/GreyboxSection'
 
 
 const HomeView = () => {
@@ -18,7 +19,9 @@ const HomeView = () => {
         <ShowcaseSection />
         <ProductGridSection title= "Featured Products" items={productContext.featuredProducts}/> 
         <MiddleSection/>
-        <ProductGridSection title= "Bottom Products" items={productContext.bottomProducts}/>
+        <GreyboxSection/>
+        <ProductGridSection title= "" items={productContext.featuredProducts}/> 
+        
         <BottomLinksSection/>
         <FooterSection/>
     </>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 const ContactFormSection = () => {
-const[contactForm, setContactForm] = useState({name:'', email:'', comment:'' })
+const[contactForm, setContactForm] = useState({name:'', email:'', comments:'' })
 const[formErrors, setFormErrors] = useState({})
 const [canSubmit, setCanSubmit] = useState(false)
 const [failedCanSubmit, setFailedCanSubmit] = useState(false)
@@ -19,10 +19,10 @@ const validate = (values) => {
     else if(!regex_email.test(values.email))
         errors.email = "You must enter a valid email-adress (eg. name@domain.com)"    
 
-    if(!values.comment)
-        errors.comment = "You must enter a comment"    
-     else if(values.comment.length < 5)
-        errors.comment = "Your comment must be longer than five characters"
+    if(!values.comments)
+        errors.comments = "You must enter a comments"    
+     else if(values.comments.length < 5)
+        errors.comments = "Your comments must be longer than five characters"
 
 
 
@@ -39,6 +39,7 @@ const validate = (values) => {
 const handleChange = (e) => {
    const {id, value} = e.target
    setContactForm({...contactForm, [id]: value})
+   console.log(e)
 }
 
 
@@ -47,12 +48,15 @@ const handleSubmit = (e) => {
     setFailedCanSubmit(false)
     setCanSubmit(false)
     setFormErrors(validate(contactForm))
+    console.log('form:', contactForm)
     
-    if (formErrors === null) {
+    if ([]) {
 
        
-       let json = JSON.stringify( { contactForm})
-       console.log(json)
+       let json = JSON.stringify( contactForm)
+       let jsonFel = JSON.stringify({contactForm})
+       console.log('JSON:',json)
+       console.log('FELJSON:',jsonFel)
        
         fetch('https://win22-webapi.azurewebsites.net/api/contactform',{
             method:'POST',
@@ -62,7 +66,7 @@ const handleSubmit = (e) => {
         body: json
         })
         .then(res =>{
-            console.log(res.status)
+            console.log(res)
 
             if (res.status === 200) {
                 setCanSubmit(true)
@@ -87,12 +91,12 @@ const handleSubmit = (e) => {
       {
         canSubmit ?  
         (<div className='alert alert-success text-center' role="alert">
-            <h3>Thank you for your comment!</h3>
+            <h3>Thank you for your comments!</h3>
             <p>We will contact you as soon as possible.</p>
         </div>) : (<></>) }
 
         {failedCanSubmit ?  
-        (<div className='alert alert-warning text-center' role="alert">
+        (<div className='alert alert-danger text-center' role="alert">
         <h3>Something went wrong!</h3>
          <p>We couldn't submit your comments right now</p>
         </div>) : (<></>)}
@@ -121,13 +125,13 @@ const handleSubmit = (e) => {
 
         <div className='textarea'>
 
-            <textarea id='comment' placeholder='Comments'value={contactForm.comment}  onChange={handleChange} ></textarea>
-            <div className='errorMessage'>{formErrors.comment}</div>
+            <textarea id='comments' placeholder='comments'value={contactForm.comments}  onChange={handleChange} ></textarea>
+            <div className='errorMessage'>{formErrors.comments}</div>
 
         </div>
 
         <div>
-            <button type='submit' className='comment-button'>Post Comments</button>
+            <button type='submit' className='comment-button'>Post comments</button>
         </div>
 
         </form>
