@@ -20,31 +20,19 @@ function App() {
   featuredProducts: []
 
  })
-
-
  
- 
+ const fetchProducts = async () => {
+  let response = await fetch('https://win22-webapi.azurewebsites.net/api/products%27')
+  const json = await response.json();
+
+  return {response, json};
+};
 
   useEffect(() => {
-    const fetchAllProducts = async () => {
-      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
-      setProducts( {...products, all: await result.json()})
-    }
-
-    fetchAllProducts()
-
-
-    const fetchFeaturedProducts = async () => {
-      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?')
-      setProducts( {...products, featuredProducts: await result.json()})
-    }
-
-    fetchFeaturedProducts()
-
-
-   
-  }, [setProducts])
-
+    fetchProducts().then(
+      data => setProducts( {...data.response, all: data.json} )
+    )
+  }, [])
 
   return (
     <BrowserRouter>
@@ -53,7 +41,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomeView/>} />
-      
+
         <Route path='/contacts' element={<ContactsView/>} /> 
         <Route path='/products' element={<ProductsView/>} />
         <Route path='/*' element={<NotFoundView/>} />
@@ -63,9 +51,9 @@ function App() {
 
 
    </ProductContext.Provider>
-    
+
     </ BrowserRouter>
-    
+
   )
 }
 

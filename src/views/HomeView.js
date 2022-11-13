@@ -13,19 +13,23 @@ const HomeView = () => {
   const productContext = useContext(ProductContext)
   window.top.document.title ='Fixxo.'
 
+  function getSubsetOfProducts(start, end) {
+    return productContext.all.slice(start, end);
+  }
+
   return (
     <>
         <MainMenuSection />
         <ShowcaseSection />
-        <ProductGridSection title= "Featured Products" items={productContext.featuredProducts}/> 
+        <ProductGridSection title= "Featured Products" items={getSubsetOfProducts(0, 8)}/> 
         <MiddleSection/>
         <GreyboxSection/>
-        <ProductGridSection title= "" items={productContext.featuredProducts}/> 
-        
+        <ProductGridSection title= "" items={getSubsetOfProducts(8, productContext.all.length)}/> 
+
         <BottomLinksSection/>
         <FooterSection/>
     </>
-    
+
   )
 }
 
