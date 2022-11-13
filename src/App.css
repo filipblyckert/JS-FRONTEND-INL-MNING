@@ -471,7 +471,7 @@ max-width: 1110px;
 .showcase{
     background: rgb(230, 230, 230);
     background: linear-gradient(90deg, rgba(245,245,245,1) 100%);
-    padding-top: 80px;
+    padding-top: 0px;
     margin-bottom: 50px;
    
 }
@@ -482,7 +482,7 @@ max-width: 1110px;
     align-items: center;
 }
 .sale{
-    margin-left: 20px;
+    margin-left: 90px;
 }
 .discount{
 margin-left: -25px;
@@ -498,7 +498,7 @@ margin-left: -25px;
     position: absolute;
     width: 188px; 
     height: 60px;
-    margin-left: 800px;
+    margin-left: 830px;
     margin-top: 250px;
     background-color: #FF7373;
     color: white;
@@ -701,7 +701,7 @@ margin-left: -25px;
 .greybox-right{
     position: absolute;
     margin-left: 960px;
-    margin-top: 818px;
+    margin-top: 790px;
     height: 690px;
     width: 825px;
     background-color: #707070;
@@ -740,4 +740,20 @@ margin-left: -25px;
     margin-top: 250px;
     color: white;
 
+}
+
+
+.error{
+    display: flex;
+    justify-content: center;
+    margin-left: 660px;
+    margin-top: 30px;
+}
+
+.page{
+color: #FF7373;
+}
+
+.left-img{
+margin-left: -13px;
 }

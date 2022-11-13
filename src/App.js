@@ -22,7 +22,7 @@ function App() {
  })
  
  const fetchProducts = async () => {
-  let response = await fetch('https://win22-webapi.azurewebsites.net/api/products%27')
+  let response = await fetch('https://win22-webapi.azurewebsites.net/api/products')
   const json = await response.json();
 
   return {response, json};
